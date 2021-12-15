@@ -105,7 +105,7 @@ async def Doodstream_uploader(bot, message):
     #v_len = len(v_id)
     #v_id = v_id[1:v_len - 2]
 
-    v_url = 'https://dood.ws/d/' + v_id
+    v_url = 'https://vidzoop.blogspot.com/p/share-video.html?vid=' + v_id + '&m=1'
     v_url = url
     res = [str, v_url]
     return res'''
