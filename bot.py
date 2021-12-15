@@ -30,20 +30,8 @@ bot = Client('Doodstream bot',
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hey, {message.chat.first_name}!**\n\n"
+        f"**Hi, {message.chat.first_name}!**\n\n"
         "**I am a Doodstream post convertor bot and i am able to upload all direct links to Doodstream,just send me link or full post...**")
-
-@bot.on_message(filters.command('help') & filters.private)
-async def start(bot, message):
-    await message.reply(
-        f"**Hello, {message.chat.first_name}!**\n\n"
-        "**If you send post which had Doodstream Links, texts & images... Than I'll convert & replace all Doodstream links with your Doodstream links \nMessage me @jack_sparow119 For more help-**")
-
-@bot.on_message(filters.command('support') & filters.private)
-async def start(bot, message):
-    await message.reply(
-        f"**Hey, {message.chat.first_name}!**\n\n"
-        "**please contact me on @jack_sparow119**")
     
 @bot.on_message(filters.text & filters.private)
 async def Doodstream_uploader(bot, message):
