@@ -23,7 +23,7 @@
         },
         "DOODSTREAM_API_KEY": {
             "description": "Get this from https://doodstream.com/api-docs (must change)",
-            "value": "66186ezt1oza1ar9unrsk"
+            "value": "75715aemvpr6g8i6uuwtc"
         },
          "BITLY_KEY": {
             "description": "Bitly API See Readme for further details",
