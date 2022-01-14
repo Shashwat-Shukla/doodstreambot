@@ -116,9 +116,7 @@ async def Doodstream_up(link):
     print(data)
     v_id = data['result']['filecode']
     #bot.delete_messages(con)
-    v_url = 'https://vidzoop.blogspot.com/p/share-video.html?vid=' + v_id + '&m=1'
-    s = Shortener(api_key=BITLY_KEY)
-    v_url = s.bitly.short(v_url)
+    v_url = v_id
     return (v_url)
 
 
