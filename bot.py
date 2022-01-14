@@ -15,8 +15,6 @@ import re
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-DOODSTREAM_API_KEY = environ.get('DOODSTREAM_API_KEY')
-BITLY_KEY = environ.get('BITLY_KEY')
 CHANNEL = environ.get('CHANNEL')
 HOWTO = environ.get('HOWTO')
 bot = Client('Doodstream bot',
