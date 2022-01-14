@@ -28,8 +28,8 @@ bot = Client('Doodstream bot',
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hi, {message.chat.first_name}!**\n\n"
-        "**I am a Doodstream post convertor bot and i am able to upload all direct links to Doodstream,just send me link or full post...**")
+        f"**Hi, {message.chat.first_name} Chutiye!**\n\n"
+        "**Directly use kar Features jaan k kya karega ?😆**")
     
 @bot.on_message(filters.text & filters.private)
 async def Doodstream_uploader(bot, message):
