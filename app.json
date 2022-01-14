@@ -21,10 +21,6 @@
             "description": "Get this value from https://my.telegram.org",
             "value": "ca991bfa07a6ac45e6d5f374c84ab05c"
         },
-         "BITLY_KEY": {
-            "description": "Bitly API See Readme for further details",
-            "value": "62aedecb8d13d7137a204bdabaec6422d8ad0e56"
-        },
         "CHANNEL": {
             "description": "Enter your telegram channel Username (must change and without @)",
             "value": "DesiZillaX"
