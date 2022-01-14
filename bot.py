@@ -108,15 +108,15 @@ async def Doodstream_up(link):
     title_new = urlparse(link)
     title_new = os.path.basename(title_new.path)
     title_Doodstream = '@' + CHANNEL + title_new
-    res = requests.get(
-         f'https://doodapi.com/api/upload/url?key={DOODSTREAM_API_KEY}&url={link}&new_title={title_Doodstream}')
-         
+    realaurl = 'https://diskuploader.mypowerdisk.com/v1/tp/cp'
+param = {'token':'us5CqX8oandALtQ86FLq','link':link
+}
+res = requests.post(realaurl, json = param)         
     data = res.json()
     data = dict(data)
     print(data)
-    v_id = data['result']['filecode']
     #bot.delete_messages(con)
-    v_url = v_id
+    v_url = data['sharelink']
     return (v_url)
 
 
