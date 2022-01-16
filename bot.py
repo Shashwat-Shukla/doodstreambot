@@ -55,7 +55,7 @@ async def Doodstream_uploader(bot, message):
             await message.reply(f'{Doodstream_link}' , quote=True)
         else:
             await bot.delete_messages(chat_id=message.chat.id, message_ids=dele)
-            await bot.send_photo(-1001751496921, message.photo.file_id, caption=f'{Doodstream_link}')
+            await bot.send_photo(-1001275198290, message.photo.file_id, caption=f'{Doodstream_link}')
     except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
 
