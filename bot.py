@@ -113,6 +113,7 @@ async def Doodstream_up(link):
     print(data)
     #bot.delete_messages(con)
     v_url = data['sharelink']
+    v_url = '**' + v_url + '**'
     return (v_url)
 
 
