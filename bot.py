@@ -106,7 +106,7 @@ async def Doodstream_up(link):
     title_new = os.path.basename(title_new.path)
     title_Doodstream = '@' + CHANNEL + title_new
     realaurl = 'https://diskuploader.mypowerdisk.com/v1/tp/cp'
-    param = {'token':'TQsGb6SdXq0lRB7H66Bq','link':link}
+    param = {'token':'QCyULfzUJvgSEl1mABkA','link':link}
     res = requests.post(realaurl, json = param)         
     data = res.json()
     data = dict(data)
