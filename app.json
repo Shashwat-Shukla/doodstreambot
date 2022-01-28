@@ -21,7 +21,7 @@
             "description": "Get this value from https://my.telegram.org",
             "value": "ca991bfa07a6ac45e6d5f374c84ab05c"
         },
-        "CHANNEL": {
+        "CUSTOM_FOOTER": {
             "description": "Enter your Custom Footer",
             "value": "Join"
         }
