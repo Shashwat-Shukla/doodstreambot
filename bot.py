@@ -103,7 +103,7 @@ async def Doodstream_up(link):
         unshortener = UnshortenIt()
         link = unshortener.unshorten(link)
     
-    url = 'https://gplinks.in/api'
+    url = 'https://urlshortx.com/api' 
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
