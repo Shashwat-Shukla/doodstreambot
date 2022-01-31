@@ -24,6 +24,10 @@
         "CUSTOM_FOOTER": {
             "description": "Enter your Custom Footer",
             "value": "Join"
+        },
+        "API_KEY": {
+            "description": "Get API key from https://gplinks.in/member/tools/api",
+            "value": ""
         }
     },
     "addons": [],
