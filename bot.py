@@ -16,6 +16,7 @@ API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
 CHANNEL = environ.get('CUSTOM_FOOTER')
+API_KEY = environ.get('API_KEY')
 bot = Client('Doodstream bot',
              api_id=API_ID,
              api_hash=API_HASH,
