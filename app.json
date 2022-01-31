@@ -24,10 +24,6 @@
         "CUSTOM_FOOTER": {
             "description": "Enter your Custom Footer",
             "value": "Join"
-        },
-        "MDISK_TOKEN": {
-            "description": "Put your MDisk API key here",
-            "value": "j219piqFPsQBhba52F4l"
         }
     },
     "addons": [],
