@@ -102,13 +102,13 @@ async def Doodstream_up(link):
         unshortener = UnshortenIt()
         link = unshortener.unshorten(link)
     
-    res = requests.get('https://urlshortx.com/api?api=3b471a00838ea35956397d2b074fad7cdea8a5fe&url=' + link)
-    data = res.json()
-    data = dict(data)
-    print(data)
-    #bot.delete_messages(con)
-    v_url = data['shortenedUrl']
-    return (v_url)
+    url = 'https://gplinks.in/api'
+    params = {'api': API_KEY, 'url': link}
+
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url, params=params, raise_for_status=True) as response:
+            v_url = await response.json()
+            return v_url["shortenedUrl"]
 
 
 async def multi_Doodstream_up(ml_string):
