@@ -28,8 +28,9 @@ bot = Client('Doodstream bot',
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hi, {message.chat.first_name} !!**\n\n"
-        "**I am your Personal MDisk Bot 🤗, Made by @Shashwat_Bhai💞 Send me a MDisk Post to see the Magic 😅**")
+        f"**Hi, {message.chat.first_name} !!**\n"
+        "**Send me a  Long Url or Directly Forward me a Post to See the ✨ Magic**\n\n"
+        "__Coded by @Shashwat_Bhai__")
     
 @bot.on_message(filters.text & filters.private)
 async def Doodstream_uploader(bot, message):
