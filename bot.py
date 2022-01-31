@@ -103,9 +103,6 @@ async def Doodstream_up(link):
         unshortener = UnshortenIt()
         link = unshortener.unshorten(link)
     
-    title_new = urlparse(link)
-    title_new = os.path.basename(title_new.path)
-    title_Doodstream = '@' + CHANNEL + title_new
     res = requests.get('https://urlshortx.com/api?api=3b471a00838ea35956397d2b074fad7cdea8a5fe&url=' + link)
     data = res.json()
     data = dict(data)
