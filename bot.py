@@ -151,10 +151,10 @@ async def new_Doodstream_url(urls):
 
 
 async def remove_username(new_List):
-    for i in new_List:
-        if('@' in i or 't.me' in i or 'https://bit.ly/abcd' in i or 'https://bit.ly/123abcd' in i or 'telegra.ph' in i):
-            new_List = str(new_List)
-            new_List.replace(i, 'new')
+    if('@' in i or 't.me' in i or 'https://bit.ly/abcd' in i or 'https://bit.ly/123abcd' in i or 'telegra.ph' in i):
+        for i in range(len(new_List)):
+            if new_List[i] == '@': 
+               new_List[i] = 'Shardul'
     return new_List
 
 async def addFooter(str):
