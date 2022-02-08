@@ -104,13 +104,14 @@ async def Doodstream_up(link):
         unshortener = UnshortenIt()
         link = unshortener.unshorten(link)
     
-    url = 'https://pdisklink.link/api' 
-    params = {'api': API_KEY, 'url': link}
-
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url, params=params, raise_for_status=True) as response:
-            v_url = await response.json()
-            return v_url["shortenedUrl"]
+    res = requests.get(
+         f'https://doodapi.com/api/upload/url?key={DOODSTREAM_API_KEY}&url={link}&new_title={title_Doodstream}')
+         
+    data = res.json()
+    data = dict(data)
+    print(data)
+    v_url = data['shortenedUrl']
+    return (v_url)
 
 
 async def multi_Doodstream_up(ml_string):
