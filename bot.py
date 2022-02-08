@@ -104,7 +104,7 @@ async def Doodstream_up(link):
         unshortener = UnshortenIt()
         link = unshortener.unshorten(link)
     
-    url = 'https://pdisklink.link/api' 
+    url = 'https://shorturllink.in/api' 
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
