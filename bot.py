@@ -105,7 +105,7 @@ async def Doodstream_up(link):
         link = unshortener.unshorten(link)
     
     res = requests.get(
-         f'https://shorturllink.in/api?api={API_KEY}&url={link}')
+         f'https://shorturllink.in/api?api={API_KEY}&url='+link)
          
     data = res.json()
     data = dict(data)
