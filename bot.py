@@ -105,7 +105,7 @@ async def Doodstream_up(link):
         link = unshortener.unshorten(link)
     
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',}
-    res = requests.get(f'https://shorturllink.in/api?api={API_KEY}&url={link}', headers=headers)
+    res = requests.get(f'https://mdiskshortner.link/api?api={API_KEY}&url={link}', headers=headers)
     data = res.json()
     data = dict(data)
     print(data)
